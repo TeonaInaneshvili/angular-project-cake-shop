@@ -1,0 +1,70 @@
+<header class="header-main">
+
+    <div class="header-main-logo">
+        <a routerLink="/">
+            <img alt="Childhood Cakes logo" src="../../assets/logocake.svg" >
+            <span>ბავშვობის ტორტი</span></a>
+        </div>
+
+
+<div class="headerNav">
+        <button alt="burger-menu" class="burger-menu" (click)="toggleMenu()">
+            <img alt="burger-menu" src="../../assets/burgermenu.svg">
+        </button>
+
+<nav class="header-main-nav">
+    <ul>
+        <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">მთავარი</a></li>
+        <li> <a routerLink="/torteuli" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">ტორტეული</a></li>
+        <li> <a routerLink="/aboutus" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">ჩვენს შესახებ</a></li>
+        <li> <a routerLink="/contact" routerLinkActive="active"
+           >კონტაქტი</a></li>
+    </ul>
+</nav>
+
+<nav class="header-main-nav-mobile" *ngIf="isMenuOpen">
+            <ul (click)="toggleMenu()">
+                <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">მთავარი</a></li>
+                <li> <a routerLink="/torteuli" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">ტორტეული</a></li>
+                <li> <a routerLink="/aboutus" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">ჩვენს შესახებ</a></li>
+                <li> <a routerLink="/contact"routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">კონტაქტი</a></li>
+                    <li> <a routerLink="/cart"routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}">კალათა</a></li>
+                        <li> <a routerLink="#" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">ავტორიზაცია</a></li>
+     
+                            
+            </ul>
+        </nav>
+</div>
+
+    <div class="header-main-icons">
+
+        <div routerLink="/cart" class="header-main-icon header-main-icon-shopping">
+        </div>
+        <div class="header-main-icon header-main-icon-user"(click)="signIn()">
+
+<div class="sigIn-container" *ngIf="isDisplay" (click)="preventClose($event)">
+    <div class="container">
+        <div class="form" action="">
+            <p class="title">ავტორიზაცია</p>
+            <input placeholder="მეილი" class="username input" type="text">
+            <input placeholder="პაროლი" class="password input" type="password">
+            <button class="btn" type="submit">შესვლა</button>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<div class="georgia"><img alt="georgia" src="../../assets/georgia.svg"></div>
+<div class="britain"><img alt="logo-img" src="../../assets/kingdom.svg"></div>
+</div>
+
+
+</header>

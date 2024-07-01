@@ -1,0 +1,28 @@
+<div class="detail-container">
+    <div class="detail-img">
+      <img alt="" [src]="cakes?.img">
+    </div>
+  
+    <div class="detail-card">
+      <div class="detail-card-info">
+        <p>{{cakes?.description}}</p>
+        <br>
+        <br>
+        <h4>თქვენი შერჩეული ტორტი არის </h4>
+        <p>{{cakes?.cream ? 'შოკოლადის კრემით' : 'თეთრი კრემით'}}</p>
+        <p>{{cakes?.fruits ? 'სეზონური ხილის შიგთავსით' : ''}}</p>
+        <p>{{cakes?.berries ? 'კენკრის შიგთავსით' : ''}}</p>
+        <p *ngIf="cakes?.piece !== undefined">
+          {{ cakes?.piece }} ნაჭრიანი
+        </p>
+      </div>
+  
+      <div class="video">
+        <video *ngIf="cakes?.event === 'christening'" src="../../assets/christeningvideo.mp4" type="video/mp4" loop autoplay muted></video>
+        <video *ngIf="cakes?.event === 'hbd'" src="../../assets/hbd video.mp4" type="video/mp4" loop autoplay muted></video>
+        <video *ngIf="cakes?.event === 'boy-girl'" src="../../assets/bgvideo.mp4" type="video/mp4" loop autoplay muted></video>
+        <video *ngIf="cakes?.event === 'first-tooth'" src="../../assets/firsttoothvideo.mp4" type="video/mp4" loop autoplay muted></video>
+      </div>
+    </div>
+  </div>
+  

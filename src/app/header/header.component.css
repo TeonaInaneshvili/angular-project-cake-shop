@@ -1,0 +1,383 @@
+.active{
+  border-bottom: 2px solid #ffad3be1;
+  transform:scale(1.1);
+  transition: border-bottom 0.3ease, color 0.3sc ease, transform 0.3sc ease;
+}
+body {
+position: relative;
+margin: 0;
+padding: 0; 
+
+}
+img, svg {
+width: 20px !important;
+height: 30px;
+display: block;
+background-repeat: no-repeat;
+background-size: cover;}
+
+.britain img{
+  border-radius: 50%;
+}
+
+.header-main{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color:  rgb(49, 68, 61);
+
+}
+
+
+.header-main-logo {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  color:  rgba(255, 255, 255, 0.712);
+}
+
+.header-main-logo a {
+  display: flex;
+  flex-direction: flex-end;
+  align-items: center;
+  text-decoration: none;
+  color:  rgba(255, 255, 255, 0.712);
+
+}
+
+.header-main-logo img {
+  max-width: 40px; 
+  height: auto; 
+  margin-right: 12px; 
+}
+
+.header-main-logo span {
+  font-size: 20px; 
+  font-weight: 600; 
+}
+
+
+
+
+
+.mobile-menu-btn {
+    display: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.header-main {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    position: sticky !important;
+
+}
+
+.header-main-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+}
+
+.header-main-nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+}
+
+.header-main-nav ul li a {
+    padding: 0 20px;
+    font-family: "Irish Grover", system-ui;
+    font-size: 16px;
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 0.712);
+    display: block;
+    height: 100%;
+    font-weight: 600;
+}
+
+.header-main-nav ul li a:hover {
+    color:#ffad3be1;;
+    border-bottom: rgba(255, 255, 255, 0.712);
+    transition: color 0.4s;
+}
+
+
+
+.header-main-icons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    cursor: pointer;
+}
+
+.header-main-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header-main-icon-shopping {
+    background-image: url(../../assets/cart.svg);
+}
+
+.header-main-icon-favorite {
+    background-image: url(../../assets/heart.svg);
+}
+
+.header-main-icon-user {
+    background-image: url(../../assets/user.svg);
+}
+
+.cartlistcounter{
+    width: 24px;
+    position: absolute;
+    background: #ffad3be1;
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+    margin-bottom: 42px;
+    border-radius: 50%;
+    margin-top: -22px;
+}
+
+
+.burger-menu {
+    display: none;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+  .active {
+    color:#ffad3be1 !important;
+    border-bottom: 2px solid #ffad3be1;
+    margin-bottom: 20px;
+}
+
+
+
+::selection {
+    background-color: gray;
+  }
+  
+  .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(49 68 61 / 80%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    padding: 12px;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .title {
+    color:  #ffad3be1;
+    margin: 3rem 0;
+    font-size: 2rem;
+  }
+
+  .input.username {
+    border-bottom: 1px solid #ffad3be1;
+    transition: all 400ms;
+}
+.input.username:hover {
+  background-color:  #ffad3b6e;;
+  border: none;
+  border-radius: 0.5rem;
+}
+.input.password {
+  border-bottom: 1px solid #ffad3be1;
+  transition: all 400ms;
+}
+.input.password:hover {
+  background-color:  #ffad3b6e;
+  border: none;
+  border-radius: 0.5rem;
+}
+button.btn{
+  background-color:  #ffad3b6e;
+  margin: auto;
+}
+  .input{
+    border-bottom: 1px solid #ffad3be1;
+    transition: all 400ms;
+}
+  
+  .input {
+    margin: 0.5rem 0;
+    padding: 1rem 0.5rem;
+    width: 20rem;
+    background-color: inherit;
+    color: wheat;
+    border: none;
+    outline: none;
+  }
+  
+  .username {
+    border-bottom: 1px solid wheat;
+    transition: all 400ms;
+  }
+  
+  .username:hover {
+    background-color: #424242;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  .password {
+    border-bottom: 1px solid wheat;
+    transition: all 400ms;
+  }
+  
+  .password:hover {
+    background-color: #424242;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  .btn {
+    height: 3rem;
+    width: 20rem;
+    margin-top: 3rem;
+    background-color: wheat;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 400ms;
+    box-shadow: 0 0 10px  antiquewhite, 0 0 10px ;
+  }
+  
+  
+  .btn:hover {
+    background-color:  #ffad3be1;;
+    box-shadow: none;
+  }
+  
+
+/* ------  media screen -----  */
+
+@media screen and (max-width: 1040px) {
+
+    .header-main {
+        padding: 0 30px;
+    }
+
+    .header-main-nav ul li a {
+        font-family: "Irish Grover", system-ui;
+        font-size: medium;
+        text-decoration: none;
+        color:  rgba(255, 255, 255, 0.712);
+        display: block;
+
+    }}
+
+    @media screen and (min-width: 831px) {
+        .header-main-nav-mobile {
+            display: none;
+        }
+    }
+
+
+    @media screen and (max-width: 830px) {
+
+        .header-main-icons {
+            display: none;
+        }
+
+        .header-main {
+            justify-content: space-between;
+            padding:12px;
+
+        }
+
+        .header-main-nav {
+            display: none;
+        }
+
+
+
+        .header-main-nav-mobile {
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color:rgba(49, 68, 61, 0.872);
+            height: 40vh;
+            transition: left 0.7s ease;
+            z-index: 9;
+            text-align: center;
+
+        }
+        
+
+        .header-main-nav-mobile ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .header-main-nav-mobile li {
+            padding: 10px 20px;
+        }
+        
+        .header-main-nav-mobile a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.712);
+        }
+        .burger-menu {
+          width: 32px;
+          cursor: pointer;
+          background-color: transparent;
+          border: none;
+          display: block;
+          justify-content: end;
+          right: 0;
+          margin-top: 12px;
+
+        }
+
+        .header-main-logo {
+            transform: scale(0.9);
+}
+            }
+
+
+
+            

@@ -1,0 +1,31 @@
+<app-loading *ngIf="loading"></app-loading>
+<div *ngIf="!loading">
+  <div class="filter-search-container">
+    <div class="search-container">
+      <div class="InputContainer">
+        <input placeholder="ძებნა..." id="fname" class="input" name="fname" type="text" [(ngModel)]="searchword" (keyup)="filter()">
+      </div>
+    </div>
+
+    <div class="filter">
+      <label for="state">დახარისხება:</label>
+      <select id="state" (change)="filterCards($event)">
+        <option value="">ყველა</option>
+        <option value="Gender">ბიჭია თუ გოგო</option>
+        <option value="christening">ნათლობა</option>
+        <option value="first-tooth">პირველი კბილი</option>
+        <option value="cosmos">კოსმოსი</option>
+        <option value="dinosaur">დინოზავრები</option>
+        <option value="princesses">პრინცესები</option>
+        <option value="superHeroes">მარველის გმირები</option>
+        <option value="jungle">ცხოველთა სამყარო</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="allcards">
+    <app-card *ngFor="let cake of filteredcakes" [cake]="cake">    </app-card>
+
+
+  </section>
+</div>

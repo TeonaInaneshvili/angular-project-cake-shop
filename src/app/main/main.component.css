@@ -1,0 +1,61 @@
+:host {
+    display: block;
+    background-color:  rgba(49, 68, 61, 0.506) !important;
+    width: 100%; 
+    box-sizing: border-box;
+    min-height: calc(100vh); 
+}
+
+.mainPage-cover {
+    background-image: url('https://github.com/TeonaInaneshvili/-/blob/main/babygirl.jpg?raw=true');
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 100vh; 
+    position:relative; 
+
+}
+
+.body{
+    background-color:rgb(49, 68, 61);
+}
+
+.childhood{
+   position:absolute;
+   z-index: 1;
+}
+
+h1{
+margin-left:5%;
+margin-top:80%;
+color: #ffad3b6e;
+width: 100%;
+font-weight: 1200;
+letter-spacing: 1.1;
+line-height: 2rem;
+cursor: pointer;
+text-decoration: none;
+}
+.childhood-text a {
+    text-decoration: none;
+  }
+
+h1:hover{
+  color: #ffad3be1; 
+}
+
+.childhood-text h3{
+margin-left:5%;
+margin-top:8%;
+color:#ffad3b6e;
+width: 100%;
+letter-spacing: 1.1;
+}
+
+
+
+  @media screen and (max-width: 1400px) {
+    :host {
+      overflow: hidden !important;
+    }
+  }

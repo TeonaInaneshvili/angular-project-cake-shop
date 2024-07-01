@@ -1,0 +1,213 @@
+
+.fav {
+    width: 100%;
+    display:flex;
+    max-width: 80%;
+    background-color: #ffad3be1;
+    border: 1px solid #ffad3be1;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: .5s;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+    transition: background-color 1s ease;
+    position: relative;
+    margin-bottom: 8px;
+  }
+
+    .fav:hover {
+        background: linear-gradient(to right ,#ffad3be1,rgba(49, 68, 61, 0.81));
+    }
+
+  .IconContainer {
+    position: absolute;
+    left: -60px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.712);
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: .5s;
+  }
+  
+  .icon {
+    border-radius: 1px;
+  }
+  
+  .text {
+    font-size:16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.712);
+    z-index: 1;
+    transition-duration: .5s;
+    font-size: 1.02em;
+    font-weight: 600;
+    margin:8px 8px 8px 0px;
+  }
+  
+  .fav:hover .IconContainer {
+    transform: translateX(58px);
+    border-radius: 10px;
+    transition-duration: .5s;
+  }
+  
+  .fav:hover .text {
+    transform: translate(10px,0px);
+    transition-duration: .5s;
+  }
+  
+  .fav:active {
+    transform: scale(0.95);
+    transition-duration: .5s;
+  }
+
+
+
+
+.card{
+
+    max-width:300px;
+    border:4px solid #ffad3be1;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 450px;
+    object-fit: contain;
+    position: relative;
+    width: 100%;
+    background-color: rgba(49, 68, 61, 0.506) !important;
+
+}
+
+
+.card-cake img{
+    width:100%;
+    max-width: 320px;
+    height: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    background-position: center;
+    transition: transform 2.5s ease; 
+    background-color: rgba(49, 68, 61, 0.506) !important;
+}
+
+.card-cake img:hover{
+    transform: scale(2);
+    object-fit:contain;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4px;
+    gap: 4px;
+
+}
+
+.card-info .title h4{
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.712);
+}
+
+
+
+.first-part{
+    position: relative;
+}
+
+.second-part{
+    background-color:  rgba(49, 68, 61, 0.506);
+}
+.sale{
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+
+.prices{
+    margin-top: 4px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.prices, .new-price{
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+  .prices p{
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    
+span{
+    color: rgba(255, 255, 255, 0.712);
+    font-weight: 800;
+}
+new-price{
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.712) !important;
+    }
+
+.prices .old-price {
+    color: rgba(255, 255, 255, 0.712);
+    font-size: 16px;
+    text-decoration: line-through;
+    margin-left: 12px;
+    font-weight: 600;
+}
+.prices{
+    color: rgba(255, 255, 255, 0.712);
+}
+.sale-card{
+    background-image:url('../../assets/sale.svg');
+    
+}
+
+
+.sale{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+}
+.main{
+    width:90px;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+}
+.sale-container{
+    display: flex;
+}
+
+/* @media screen and (max-width:1200px){
+    .price{
+        display:flex;
+        flex-direction: column;
+    }
+    .card{
+        height:500px;
+    }
+
+} */
